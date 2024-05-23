@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100vw;
+  height: 10rem;
+  background-color: #97c8eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #97c8eb;
+  padding: 2rem 0;
+}
+
+.to-do-box {
+  background-color: #058ed9;
+  width: 90%;
+  max-width: 80rem;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.text-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.to-do-input {
+  background-color: white;
+  width: 100%;
+  max-width: 76rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.to-do-input label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  color: #555;
+}
+
+.to-do-input input,
+label,
+button {
+  font-size: 1.8rem;
+}
+
+.todovalue {
+  border: #3aafb9 solid 2px;
+  border-radius: 0.5rem;
+  width: 40rem;
+  padding: 1rem;
+  height: 4rem;
+}
+
+.btn {
+  margin-left: 2rem;
+  width: 12rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: 2px solid #3aafb9;
+  background-color: #fff;
+  color: #058ed9;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #3aafb9;
+  color: white;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.incomplete,
+.complete {
+  width: 45%;
+  background-color: white;
+  border-radius: 4rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+}
+
+.list ul {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.list li {
+  background: #eee;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.list li input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 50em) {
+  .text-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .to-do-input {
+    flex-wrap: wrap;
+  }
+
+  .todovalue {
+    width: 90%;
+    height: 25px;
+  }
+  .to-do-input label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #555;
+    position: relative;
+    right: 7rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 2px solid #3aafb9;
+    background-color: #fff;
+    color: #058ed9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 0.5rem;
+    position: relative;
+    right: 8.5rem;
+  }
+
+  .to-do-input input,
+  label,
+  button {
+    font-size: 1.5rem;
+  }
+
+  .task {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  .incomplete,
+  .complete {
+    width: 100%;
+    background-color: white;
+    border-radius: 4rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .task-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+  }
+
+  .list ul {
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  .list li {
+    background: #eee;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .list li input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+}
